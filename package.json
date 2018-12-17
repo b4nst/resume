@@ -8,7 +8,7 @@
   "scripts": {
     "publish": "run-s clean prepare build:* archive cleanup",
     "prepare": "cpy src/profile.jpg build/ && cpy src/profile.jpg build/assets/",
-    "archive": "rimraf build/assets/resume.pdf.html build/assets/profile.jpg && cd build/assets && bestzip ../bastien-arata.zip *",
+    "archive": "rimraf build/assets/bastien-arata.pdf.html build/assets/profile.jpg && cd build/assets && bestzip ../bastien-arata.zip *",
     "cleanup": "rimraf build/assets",
     "build:html": "hackmyresume build src/resume.json src/htmlpart.json TO build/index.html -t node_modules/jsonresume-theme-stackoverflow",
     "build:pdf": "hackmyresume build src/resume.json TO build/assets/bastien-arata.pdf -t node_modules/jsonresume-theme-stackoverflow",
