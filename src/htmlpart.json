@@ -12,7 +12,7 @@
             }, {
                 "network": "Download",
                 "username": "Download resumé",
-                "url": "assets.zip"
+                "url": "https://github.com/BastienAr/resume/blob/gh-pages/bastien-arata.zip?raw=true"
             }
         ]
     }
