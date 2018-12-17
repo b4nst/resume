@@ -6,16 +6,22 @@
   "author": "Bastien Arata",
   "license": "MIT",
   "scripts": {
-    "publish": "run-s clean prepare build",
-    "prepare": "cpy src/profile.jpg build/",
-    "build": "hackmyresume build src/resume.json TO build/resume.all -t node_modules/jsonresume-theme-stackoverflow",
+    "publish": "run-s clean prepare build:* archive cleanup",
+    "prepare": "cpy src/profile.jpg build/ && cpy src/profile.jpg build/assets/",
+    "archive": "rimraf build/assets/resume.pdf.html build/assets/profile.jpg && cd build/assets && bestzip ../bastien-arata.zip *",
+    "cleanup": "rimraf build/assets",
+    "build:html": "hackmyresume build src/resume.json src/htmlpart.json TO build/index.html -t node_modules/jsonresume-theme-stackoverflow",
+    "build:pdf": "hackmyresume build src/resume.json TO build/assets/bastien-arata.pdf -t node_modules/jsonresume-theme-stackoverflow",
+    "build:assets": "hackmyresume build src/resume.json TO build/assets/bastien-arata.txt build/assets/bastien-arata.md build/assets/bastien-arata.yml",
     "clean": "rimraf build"
   },
   "devDependencies": {
+    "bestzip": "^2.1.2",
     "cpy-cli": "^2.0.0",
     "hackmyresume": "^1.9.0-beta",
     "jsonresume-theme-stackoverflow": "^1.4.0",
     "npm-run-all": "^4.1.5",
+    "phantomjs": "^2.1.7",
     "rimraf": "^2.6.2"
   }
 }

@@ -1,0 +1,19 @@
+{
+    "basics": {
+        "profiles": [{
+                "network": "Github",
+                "username": "BastienAr",
+                "url": "https://github.com/BastienAr"
+            },
+            {
+                "network": "Linkedin",
+                "username": "Bastien Arata",
+                "url": "https://www.linkedin.com/in/bastien-arata-819357bb"
+            }, {
+                "network": "Download",
+                "username": "Download resumé",
+                "url": "assets.zip"
+            }
+        ]
+    }
+}
