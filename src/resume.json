@@ -1,9 +1,9 @@
 {
   "basics": {
-    "label": "Programmer",
+    "label": "Software Developer",
     "email": "bastyen.a@gmail.com",
     "phone": "+33651993875",
-    "website": "https://bastien.indi.house",
+    "website": "https://bastienar.github.io/resume/",
     "name": "Bastien Arata",
     "summary": "I dedicate myself in making developers life easier. That involves a strong DevOps culture, mastering CI/CD, and non-stop technical evolution. I was a Docker referent in my last daily job.",
     "picture": "profile.jpg",
@@ -116,8 +116,13 @@
       "name": "Open source",
       "keywords": [
         "ioredis-mock",
-        "stream-mock",
-        "warp-pipes"
+        "stream-mock"
+      ]
+    }, {
+      "name": "Making",
+      "keywords": [
+        "3D print",
+        "arduino"
       ]
     }
   ],
