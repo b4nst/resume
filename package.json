@@ -1,0 +1,21 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "My resume",
+  "main": "index.js",
+  "author": "Bastien Arata",
+  "license": "MIT",
+  "scripts": {
+    "publish": "run-s clean prepare build",
+    "prepare": "cpy src/profile.jpg docs/",
+    "build": "hackmyresume build src/resume.json TO docs/resume.all -t node_modules/jsonresume-theme-stackoverflow",
+    "clean": "rimraf build"
+  },
+  "devDependencies": {
+    "cpy-cli": "^2.0.0",
+    "hackmyresume": "^1.9.0-beta",
+    "jsonresume-theme-stackoverflow": "^1.4.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^2.6.2"
+  }
+}
