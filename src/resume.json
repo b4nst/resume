@@ -5,7 +5,7 @@
     "phone": "+33651993875",
     "website": "https://bastienar.github.io/resume/",
     "name": "Bastien Arata",
-    "summary": "I dedicate myself in making developers life easier. That involves a strong DevOps culture, mastering CI/CD, and non-stop technical evolution. I was a Docker referent in my last daily job.",
+    "summary": "I dedicate myself to making developers life easier. That involves a strong DevOps culture, mastering CI/CD, and non-stop technical evolution. I was a Docker referent in my last daily job.",
     "picture": "profile.jpg",
     "profiles": [{
         "network": "Github",
@@ -131,7 +131,7 @@
       "fluency": "Native speaker"
     },
     {
-      "language": "Englisg",
+      "language": "English",
       "fluency": "Fluent"
     }
   ]
