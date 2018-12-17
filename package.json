@@ -7,8 +7,8 @@
   "license": "MIT",
   "scripts": {
     "publish": "run-s clean prepare build",
-    "prepare": "cpy src/profile.jpg docs/",
-    "build": "hackmyresume build src/resume.json TO docs/resume.all -t node_modules/jsonresume-theme-stackoverflow",
+    "prepare": "cpy src/profile.jpg build/",
+    "build": "hackmyresume build src/resume.json TO build/resume.all -t node_modules/jsonresume-theme-stackoverflow",
     "clean": "rimraf build"
   },
   "devDependencies": {
