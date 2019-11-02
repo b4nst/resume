@@ -1,7 +1,4 @@
 fileignoreconfig:
-- filename: docs/profile.jpg
-  checksum: e69c05fdbeac58e90f63e133bbe270fc703c8ed857a1d384303426128ec8bd6d
-  ignore_detectors: []
 - filename: package-lock.json
   checksum: d3ce7fcb578b9ff793e69f0699f45c6b94e31848acef1bb5bed182279626eaae
   ignore_detectors: []
