@@ -1,0 +1,108 @@
+basics:
+  name: Bastien Arata
+  label: Programmer
+  picture: profile.jpg
+  email: bastyen.a@gmail.com
+  summary: >
+    Automatization, sharing & techno (music).
+    I'm super lazy so I'm working super hard to make things be done by themselves. Kind of a paradox, right ?
+    I'm hungry to learn, to share (I mean open sourcing, not my 🍔 !). And I'm a **fail fast** addict.
+  location:
+    city: Toulouse
+    countryCode: FR
+    region: Occitanie
+  profiles:
+    - network: Github
+      username: b4nst
+    - network: Twitter
+      username: bastienarata
+
+work:
+  - company: D2SI
+    position: Cloud automatization consultant
+    website: https://d2si.io
+    startDate: '2019-02-01'
+    summary: >
+      At D2SI I'm being sent helping clients to create, automatize and strengthen their deployment procedures.
+      It goes from development environment (git trunk-based, commit hooks) to CI/CD (docker, canari deployment, GithubAction).
+      I also lead the internal hands-on lab process.
+    highlights:
+      - Automatization of a serverless stack deployment (AWS, Github)
+      - Kick start of a microservices oriented project
+      - Few hands-on creation (about docker, CI/CD)
+  - company: Sigfox
+    position: Software factory engineer
+    website: https://www.sigfox.com
+    startDate: '2015-12-15'
+    endDate: '2018-12-01'
+    summary: >
+      At Sigfox I was helping the backend and test team to fasten and strengthen the deployment process.
+      It means creating CI/CD pipeline, developing custom tools. In my last months there, I participate to the early steps of the
+      backend refactoring (on the docker/kubernetes part)
+    highlights:
+      - Dockerization of the entire backend stack
+      - Custom test tool development
+
+education:
+  - institution: Université Paul Sabatier
+    area: Information Technology, Robotics
+    studyType: Bachelor
+    startDate: '2012-09-01'
+    endDate: '2015-09-01'
+    courses:
+      - Software deployment
+      - Robotics
+
+skills:
+  - name: Docker
+    level: master
+    keywords:
+      - Docker
+      - Orchestration
+  - name: CI/CD
+    level: master
+    keywords:
+      - DevOps
+      - GithubAction
+      - Drone
+  - name: Cloud
+    level: Intermediate
+    keywords:
+      - AWS
+      - Serverless
+  - name: Software development
+    level: intermediate
+    keywords:
+      - Typescript
+      - Microservices
+      - Go
+      - Rust
+  - name: Speaker
+    level: beginner
+    keywords:
+      - Keynote
+      - Hands-on
+
+languages:
+  - language: French
+    fluency: Native speaker
+  - language: English
+    fluency: Fluent
+
+interests:
+  - name: 📖 Opensource
+    keywords:
+      - Github
+      - Talk
+      - Hands-on
+  - name: 🎛️ Music
+    keywords:
+      - Producing
+      - Ableton
+      - DJing
+      - Home studio
+  - name: 🚴 Bike
+    keywords:
+      - Mechanics
+      - Riding
+      - Transportation

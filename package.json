@@ -1,27 +1,28 @@
 {
   "name": "resume",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "description": "My resume",
   "main": "index.js",
-  "author": "Bastien Arata",
-  "license": "MIT",
-  "scripts": {
-    "publish": "run-s clean prepare build:* archive cleanup",
-    "prepare": "cpy src/profile.jpg build/ && cpy src/profile.jpg build/assets/",
-    "archive": "rimraf build/assets/bastien-arata.pdf.html build/assets/bastien-arata-print.pdf.html build/assets/profile.jpg && cd build/assets && bestzip ../bastien-arata.zip *",
-    "cleanup": "rimraf build/assets",
-    "build:html": "hackmyresume build src/resume.json src/htmlpart.json TO build/index.html -t node_modules/jsonresume-theme-so-moon",
-    "build:pdf": "hackmyresume build src/resume.json TO build/assets/bastien-arata.pdf -t node_modules/jsonresume-theme-stackoverflow",
-    "build:assets": "hackmyresume build src/resume.json TO build/assets/bastien-arata.txt build/assets/bastien-arata.md build/assets/bastien-arata.yml",
-    "clean": "rimraf build"
+  "dependencies": {
+    "jsonresume-theme-elegant": "^1.13.1",
+    "resume-cli": "^1.2.7",
+    "yamljs": "^0.3.0"
   },
-  "devDependencies": {
-    "bestzip": "^2.1.2",
-    "cpy-cli": "^2.0.0",
-    "hackmyresume": "^1.9.0-beta",
-    "jsonresume-theme-so-moon": "^1.0.0",
-    "jsonresume-theme-stackoverflow": "^1.4.0",
-    "npm-run-all": "^4.1.5",
-    "rimraf": "^2.6.2"
-  }
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b4nst/resume.git"
+  },
+  "keywords": [
+    "resume"
+  ],
+  "author": "Bastien Arata",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/b4nst/resume/issues"
+  },
+  "homepage": "https://github.com/b4nst/resume#readme"
 }
