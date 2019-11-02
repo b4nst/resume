@@ -21,7 +21,7 @@ work:
   - company: D2SI
     position: Cloud automatization consultant
     website: https://d2si.io
-    startDate: '2019-02-01'
+    startDate: "2019-02-01"
     summary: >
       At D2SI I'm being sent helping clients to create, automatize and strengthen their deployment procedures.
       It goes from development environment (git trunk-based, commit hooks) to CI/CD (docker, canari deployment, GithubAction).
@@ -33,8 +33,8 @@ work:
   - company: Sigfox
     position: Software factory engineer
     website: https://www.sigfox.com
-    startDate: '2015-12-15'
-    endDate: '2018-12-01'
+    startDate: "2015-12-15"
+    endDate: "2018-12-01"
     summary: >
       At Sigfox I was helping the backend and test team to fasten and strengthen the deployment process.
       It means creating CI/CD pipeline, developing custom tools. In my last months there, I participate to the early steps of the
@@ -47,8 +47,8 @@ education:
   - institution: Université Paul Sabatier
     area: Information Technology, Robotics
     studyType: Bachelor
-    startDate: '2012-09-01'
-    endDate: '2015-09-01'
+    startDate: "2012-09-01"
+    endDate: "2015-09-01"
     courses:
       - Software deployment
       - Robotics
@@ -106,3 +106,9 @@ interests:
       - Mechanics
       - Riding
       - Transportation
+
+# Error generated if this fields are null
+awards: []
+volunteer: []
+publications: []
+references: []
