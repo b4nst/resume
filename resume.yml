@@ -43,6 +43,13 @@ work:
       - Dockerization of the entire backend stack
       - Custom test tool development
 
+publications:
+  - name: Personne dans le cockpit, pilote automatique
+    publisher: DEVOPS D-DAY
+    website: https://www.youtube.com/watch?v=QzYqVhiK524
+    releaseDate: "2019-11-14"
+    summary: Automatization of a serverless (AWS lambdas) chat with GithubAction. Public talk in french, during the devops d-day convention.
+
 education:
   - institution: Université Paul Sabatier
     area: Information Technology, Robotics
