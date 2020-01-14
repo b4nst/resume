@@ -15,7 +15,7 @@
     "pretest": "run-s convert",
     "test": "resume test",
     "clean": "rm -rf resume.json dist",
-    "package": "mkdir -p dist  && cp profile.jpg resume.json dist",
+    "package": "mkdir -p dist  && cp profile.jpg resume.json dist && touch dist/.nojekyll",
     "prebuild": "run-s clean convert package",
     "build": "resume export dist/index.html --theme elegant"
   },
