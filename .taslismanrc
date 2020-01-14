@@ -1,0 +1,5 @@
+fileignoreconfig:
+- filename: resume.yml
+  checksum: 8de735f6c7537551878985902645a17164085264a9eadf1a389f40960fcbb91c
+  ignore_detectors: []
+scopeconfig: []
