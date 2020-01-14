@@ -2,4 +2,7 @@ fileignoreconfig:
 - filename: package-lock.json
   checksum: 50876912a0c54adc882152bb32ccd938a2dc5ef368ca2d1396fc2642b73db62e
   ignore_detectors: []
+- filename: resume.yml
+  checksum: 8de735f6c7537551878985902645a17164085264a9eadf1a389f40960fcbb91c
+  ignore_detectors: []
 scopeconfig: []
