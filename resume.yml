@@ -115,7 +115,11 @@ interests:
       - Transportation
 
 # Error generated if this fields are null
-awards: []
+awards:
+  - title: "AWS Certified Solutions Architect - Associate"
+    date: "2020-01-10"
+    awarder: "aws"
+    summary: "Id *SF8Q2VCCNE14QY51* (can be validate [here](http://aws.amazon.com/verification))"
 volunteer: []
 publications: []
 references: []
