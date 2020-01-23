@@ -1,0 +1,125 @@
+basics:
+  name: Bastien Arata
+  label: Developpeur
+  picture: ../profile.jpg
+  email: bastyen.a@gmail.com
+  summary: >
+    Automatisation, partage & techno.
+    J'aime me reposer, donc je travaille dur pour que tout se fasse tout seul !
+    J'aime apprendre, partager (plutot open source, pas mon 🍔 !). Si ce n'est pas simple, ce n'est pas fini.
+  location:
+    city: Toulouse
+    countryCode: FR
+    region: Occitanie
+  profiles:
+    - network: Github
+      username: b4nst
+    - network: Twitter
+      username: bastienarata
+
+work:
+  - company: D2SI
+    position: Consultant DevOps Cloud
+    website: https://d2si.io
+    startDate: "2019-02-01"
+    summary: >
+      Chez D2SI j'ai comme mission d'aider nos clienr a créer, automatiser et renforcer leurs systèmes de déploiement.
+      Depuis l'environment de developpement (git workflow, commit hooks, lint), jusqu'à la stack d'intégration/déploiement continu (docker, GithubAction, canari deployment).
+      J'ai aussi récemment pris les sujets de formation interne (hands-on, on boarding).
+    highlights:
+      - Automatisation du déploiement d'une stack serverless (AWS, Github) dans des environments prod, dev et intégration.
+      - Démarrage d'un projet microservices.
+      - Création de quelques hands-on (sur docker, CI/CD)
+  - company: Sigfox
+    position: Software factory engineer
+    website: https://www.sigfox.com
+    startDate: "2015-12-15"
+    endDate: "2018-12-01"
+    summary: >
+      Chez Sigfox j'aidais les équipes backend et test a accélérer et renforcer le déploiement de la stack.
+      Création des pipelines d'intégration/déploiement, developpement d'outils sur mesure. Lors de mes derniers mois j'ai participé a la refonte de la stack
+      backend (les parties docker/kubernetes). 
+    highlights:
+      - Dockerization de toute la stack backend.
+      - Développement d'outils sur mesure.
+
+publications:
+  - name: Personne dans le cockpit, pilote automatique
+    publisher: DEVOPS D-DAY
+    website: https://www.youtube.com/watch?v=QzYqVhiK524
+    releaseDate: "2019-11-14"
+    summary: Automatization du deploiement d'un chat serverless (AWS lambdas) grace à GithubAction. C'était une conférence publique, pendant la convention Devops D-Day.
+
+education:
+  - institution: Université Paul Sabatier
+    area: Robotique et Informatique
+    studyType: Master
+    startDate: "2012-09-01"
+    endDate: "2015-09-01"
+    courses:
+      - Developpement informatique
+      - Robotique
+
+skills:
+  - name: Docker
+    level: master
+    keywords:
+      - Docker
+      - Orchestration
+  - name: CI/CD
+    level: master
+    keywords:
+      - DevOps
+      - GithubAction
+      - Drone
+  - name: Cloud
+    level: Intermediate
+    keywords:
+      - AWS
+      - Serverless
+  - name: Software development
+    level: intermediate
+    keywords:
+      - Typescript
+      - Microservices
+      - Go
+      - Rust
+  - name: Speaker
+    level: beginner
+    keywords:
+      - Keynote
+      - Hands-on
+
+languages:
+  - language: Francais
+    fluency: Native speaker
+  - language: Anglais
+    fluency: Fluent
+
+interests:
+  - name: 📖 Opensource
+    keywords:
+      - Github
+      - Talk
+      - Hands-on
+  - name: 🎛️ Music
+    keywords:
+      - Producing
+      - Ableton
+      - DJing
+      - Home studio
+  - name: 🚴 Bike
+    keywords:
+      - Mechanics
+      - Riding
+      - Transportation
+
+# Error generated if this fields are null
+awards:
+  - title: "AWS Certified Solutions Architect - Associate"
+    date: "2020-01-10"
+    awarder: "aws"
+    summary: "[![logo](https://www.certmetrics.com/amazon/Telerik.Web.UI.WebResource.axd?imgid=96ebdeebaf3c41788d5716f8f52ecc2f&type=rbi)](https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2020-01-10&ci=AWS01214881)"
+volunteer: []
+publications: []
+references: []

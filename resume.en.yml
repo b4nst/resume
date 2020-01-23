@@ -1,12 +1,12 @@
 basics:
   name: Bastien Arata
   label: Programmer
-  picture: profile.jpg
+  picture: ../profile.jpg
   email: bastyen.a@gmail.com
   summary: >
     Automatization, sharing & techno (music).
     I'm super lazy so I'm working super hard to make things be done by themselves. Kind of a paradox, right ?
-    I'm hungry to learn, to share (I mean open sourcing, not my 🍔 !). And I'm a **fail fast** addict.
+    I'm hungry to learn, to share (I mean open sourcing, not my 🍔 !). If it's not simple, it's not done.
   location:
     city: Toulouse
     countryCode: FR
@@ -19,7 +19,7 @@ basics:
 
 work:
   - company: D2SI
-    position: Cloud automatization consultant
+    position: Cloud & DevOps consultant
     website: https://d2si.io
     startDate: "2019-02-01"
     summary: >
@@ -27,7 +27,7 @@ work:
       It goes from development environment (git trunk-based, commit hooks) to CI/CD (docker, canari deployment, GithubAction).
       I also lead the internal hands-on lab process.
     highlights:
-      - Automatization of a serverless stack deployment (AWS, Github)
+      - Automatization of a serverless stack deployment (AWS, Github) in prod, dev & integration
       - Kick start of a microservices oriented project
       - Few hands-on creation (about docker, CI/CD)
   - company: Sigfox

@@ -11,13 +11,12 @@
   },
   "devDependencies": {},
   "scripts": {
-    "convert": "yaml2json resume.yml > resume.json",
+    "convert": "make resume.en.json",
     "pretest": "run-s convert",
     "test": "resume test",
     "clean": "rm -rf resume.json dist",
     "package": "mkdir -p dist  && cp profile.jpg resume.json dist && touch dist/.nojekyll",
-    "prebuild": "run-s clean convert package",
-    "build": "resume export dist/index.html --theme elegant"
+    "build": "make dist/en/index.html"
   },
   "repository": {
     "type": "git",
