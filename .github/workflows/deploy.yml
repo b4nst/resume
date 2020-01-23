@@ -13,7 +13,7 @@ jobs:
       - name: install dependencies
         env:
           PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: true
-        run: npm ci && npm install -g npx
+        run: npm ci
       - name: build
         run: make -j
       - name: deploy
