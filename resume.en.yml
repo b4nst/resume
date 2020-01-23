@@ -4,7 +4,7 @@ basics:
   picture: ../img/profile.jpg
   email: bastyen.a@gmail.com
   summary: >
-    Automatization, sharing & techno (music).
+    Automatization, sharing & techno.
     I'm super lazy so I'm working super hard to make things be done by themselves. Kind of a paradox, right ?
     I'm hungry to learn, to share (I mean open sourcing, not my 🍔 !). If it's not simple, it's not done.
   location:
@@ -29,7 +29,7 @@ work:
     highlights:
       - Automatization of a serverless stack deployment (AWS, Github) in prod, dev & integration
       - Kick start of a microservices oriented project
-      - Few hands-on creation (about docker, CI/CD)
+      - Some hands-on creation (about docker, CI/CD)
   - company: Sigfox
     position: Software factory engineer
     website: https://www.sigfox.com
@@ -48,7 +48,7 @@ publications:
     publisher: DEVOPS D-DAY
     website: https://www.youtube.com/watch?v=QzYqVhiK524
     releaseDate: "2019-11-14"
-    summary: Automatization of a serverless (AWS lambdas) chat with GithubAction. Public talk in french, during the devops d-day convention.
+    summary: Automatization of a serverless (AWS lambdas) chat with GithubAction. Public talk in french (available on YouTube), during the devops d-day convention.
 
 education:
   - institution: Université Paul Sabatier

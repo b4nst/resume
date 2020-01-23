@@ -1,12 +1,12 @@
 basics:
   name: Bastien Arata
-  label: Developpeur
+  label: Développeur
   picture: ../img/profile.jpg
   email: bastyen.a@gmail.com
   summary: >
     Automatisation, partage & techno.
-    J'aime me reposer, donc je travaille dur pour que tout se fasse tout seul !
-    J'aime apprendre, partager (plutot open source, pas mon 🍔 !). Si ce n'est pas simple, ce n'est pas fini.
+    J'aime avoir du temps, donc je travaille dur pour que tout se fasse tout seul !
+    J'aime apprendre et partager (plutot open source, pas mon 🍔 !). Si ce n'est pas simple, ce n'est pas fini.
   location:
     city: Toulouse
     countryCode: FR
@@ -23,9 +23,9 @@ work:
     website: https://d2si.io
     startDate: "2019-02-01"
     summary: >
-      Chez D2SI j'ai comme mission d'aider nos clienr a créer, automatiser et renforcer leurs systèmes de déploiement.
-      Depuis l'environment de developpement (git workflow, commit hooks, lint), jusqu'à la stack d'intégration/déploiement continu (docker, GithubAction, canari deployment).
-      J'ai aussi récemment pris les sujets de formation interne (hands-on, on boarding).
+      Chez D2SI j'ai comme mission d'aider nos clients à créer, automatiser et renforcer leurs systèmes de déploiement.
+      C'est-à dire la mise en place de l'environment de developpement (git workflow, commit hooks, lint), jusqu'à la stack d'intégration/déploiement continu (docker, GithubAction, canari deployment).
+      J'ai aussi récemment pris les sujets de formation interne (hands-on, onboarding).
     highlights:
       - Automatisation du déploiement d'une stack serverless (AWS, Github) dans des environments prod, dev et intégration.
       - Démarrage d'un projet microservices.
@@ -36,8 +36,8 @@ work:
     startDate: "2015-12-15"
     endDate: "2018-12-01"
     summary: >
-      Chez Sigfox j'aidais les équipes backend et test a accélérer et renforcer le déploiement de la stack.
-      Création des pipelines d'intégration/déploiement, developpement d'outils sur mesure. Lors de mes derniers mois j'ai participé a la refonte de la stack
+      Chez Sigfox j'aidais les équipes backend et test à accélérer et renforcer le déploiement de la stack.
+      J'ai créé les pipelines d'intégration/déploiement, développement d'outils sur mesure. Les derniers mois j'ai participé à la refonte de la stack
       backend (les parties docker/kubernetes). 
     highlights:
       - Dockerization de toute la stack backend.
@@ -48,7 +48,7 @@ publications:
     publisher: DEVOPS D-DAY
     website: https://www.youtube.com/watch?v=QzYqVhiK524
     releaseDate: "2019-11-14"
-    summary: Automatization du deploiement d'un chat serverless (AWS lambdas) grace à GithubAction. C'était une conférence publique, pendant la convention Devops D-Day.
+    summary: Automatization du déploiement d'un chat serverless (AWS lambdas) grace à GithubAction. C'était une conférence publique (disponible sur YouTube), pendant la convention Devops D-Day.
 
 education:
   - institution: Université Paul Sabatier
@@ -104,15 +104,15 @@ interests:
       - Hands-on
   - name: 🎛️ Music
     keywords:
-      - Producing
+      - Production
       - Ableton
       - DJing
       - Home studio
-  - name: 🚴 Bike
+  - name: 🚴 Vélo
     keywords:
-      - Mechanics
-      - Riding
-      - Transportation
+      - Mécanique
+      - Course
+      - Transport
 
 # Error generated if this fields are null
 awards:
