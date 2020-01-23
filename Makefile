@@ -2,12 +2,12 @@
 
 langs = $(patsubst resume.%.yml,dist/%/index.html,$(wildcard resume.*.yml))
 
-default: dist/.nojekyll dist/profile.jpg dist/index.html $(langs)
+default: dist/.nojekyll dist/img dist/index.html $(langs)
 
 dist/.nojekyll: dist/.f
 	touch dist/.nojekyll
-dist/profile.jpg: dist/.f
-	cp profile.jpg dist
+dist/img: img
+	cp -r img dist/img
 dist/index.html: dist/.f
 	cp index.html dist
 

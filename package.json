@@ -10,14 +10,7 @@
     "yamljs": "^0.3.0"
   },
   "devDependencies": {},
-  "scripts": {
-    "convert": "make resume.en.json",
-    "pretest": "run-s convert",
-    "test": "resume test",
-    "clean": "rm -rf resume.json dist",
-    "package": "mkdir -p dist  && cp profile.jpg resume.json dist && touch dist/.nojekyll",
-    "build": "make dist/en/index.html"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/b4nst/resume.git"
