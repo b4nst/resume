@@ -1,7 +1,7 @@
 basics:
   name: Bastien Arata
   label: Developpeur
-  picture: ../profile.jpg
+  picture: ../img/profile.jpg
   email: bastyen.a@gmail.com
   summary: >
     Automatisation, partage & techno.
@@ -119,7 +119,7 @@ awards:
   - title: "AWS Certified Solutions Architect - Associate"
     date: "2020-01-10"
     awarder: "aws"
-    summary: "[![logo](https://www.certmetrics.com/amazon/Telerik.Web.UI.WebResource.axd?imgid=96ebdeebaf3c41788d5716f8f52ecc2f&type=rbi)](https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2020-01-10&ci=AWS01214881)"
+    summary: "[![logo](../img/aws_saa.png)](https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2020-01-10&ci=AWS01214881)"
 volunteer: []
 publications: []
 references: []
