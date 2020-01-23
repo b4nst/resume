@@ -15,7 +15,8 @@ dist/%/resume.json: resume.%.yml dist/%/.f
 	npx yaml2json $< > $@
 dist/%/index.html : dist/%/resume.json
 	cd $(dir $@) && npx resume export $(notdir $@) --theme elegant
-	sed -i '' s/lang=\"en\"/lang=\"$*\"/g $@
+	sed -i.bak s/lang=\"en\"/lang=\"$*\"/g $@
+	rm $@.bak
 
 %/.f:
 	mkdir -p $(dir $@)
