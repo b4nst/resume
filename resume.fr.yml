@@ -18,10 +18,22 @@ basics:
       username: bastienarata
 
 work:
+  - company: Loft Orbital
+    position: Site Reliability Engineer
+    website: https://loftorbital.com
+    startDate: "2020-05-04"
+    summary: >
+      Chez Loft Orbital je m'occupe de la stack de production.
+      Cela comprends toute la partie cloud, le déploiement, l'automatisation, l'IC/DC and tous les outils sur mesure.
+    highlight:
+      - Déploiement d'un cluster Kubernetes dans le cloud (GCP, AWS)
+      - Refactorisation des méthodes et outils de dévelopement
+      - Amélioration et stabilisation du CI/CD
   - company: D2SI
     position: Consultant DevOps Cloud
     website: https://d2si.io
     startDate: "2019-02-01"
+    endDate: "2020-05-01" 
     summary: >
       Chez D2SI j'ai comme mission d'aider nos clients à créer, automatiser et renforcer leurs systèmes de déploiement.
       C'est-à dire la mise en place de l'environment de developpement (git workflow, commit hooks, lint), jusqu'à la stack d'intégration/déploiement continu (docker, GithubAction, canari deployment).
