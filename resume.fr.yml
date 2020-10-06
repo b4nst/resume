@@ -25,7 +25,7 @@ work:
     summary: >
       Chez Loft Orbital je m'occupe de la stack de production.
       Cela comprends toute la partie cloud, le déploiement, l'automatisation, l'IC/DC and tous les outils sur mesure.
-    highlight:
+    highlights:
       - Déploiement d'un cluster Kubernetes dans le cloud (GCP, AWS)
       - Refactorisation des méthodes et outils de dévelopement
       - Amélioration et stabilisation du CI/CD

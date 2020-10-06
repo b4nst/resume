@@ -25,7 +25,7 @@ work:
     summary: >
       At Loft Orbital I'm taking care of the production stack.
       It includes cloud management, deployment, automatization, CI/CD and tooling.
-    highlight:
+    highlights:
       - Kubernetes cloud (GCP, AWS) cluster deployment
       - Workflow refactoring, dev tools.
       - CI/CD performances and reliability
