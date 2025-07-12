@@ -1,0 +1,15 @@
+{
+  "name": "jsonresume-theme-holographic",
+  "version": "1.0.0",
+  "description": "Dark holographic theme for JSON Resume with monospace fonts",
+  "main": "index.js",
+  "keywords": [
+    "jsonresume",
+    "theme",
+    "dark",
+    "holographic",
+    "monospace"
+  ],
+  "author": "Bastien Arata",
+  "license": "MIT"
+}

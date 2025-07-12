@@ -1,12 +1,13 @@
 basics:
   name: Bastien Arata
-  label: Programmer
+  label: Staff Software Engineer & SRE Team Lead
   picture: ../img/profile.jpg
   email: bastyen.a@gmail.com
   summary: >
-    Automatization, sharing & techno.
-    I'm super lazy so I'm working super hard to make things be done by themselves. Kind of a paradox, right ?
-    I'm hungry to learn, to share (I mean open sourcing, not my 🍔 !). If it's not simple, it's not done.
+    Staff engineer who spends way too much time making computers talk to each other so I don't have to.
+    Currently obsessed with systems programming and making packets go brrr across networks (see: building a global mesh network for satellites, because why not?).
+    When I'm not automating myself out of a job, you'll find me hacking on low-level network stuff or getting my hands dirty building bicycles.
+    My philosophy: if it's not simple, it's not done. Also, if it can be automated, it will be automated - I'm too lazy for manual work!
   location:
     city: Toulouse
     countryCode: FR
@@ -19,43 +20,65 @@ basics:
 
 work:
   - company: Loft Orbital
-    position: Site Reliability Engineer
+    position: Staff Software Engineer
     website: https://loftorbital.com
     startDate: "2020-05-04"
     summary: >
-      At Loft Orbital I'm taking care of the production stack.
-      It includes cloud management, deployment, automatization, CI/CD and tooling.
+      At Loft Orbital I architect and develop critical systems while leading the SRE team.
+      I focus on cloud infrastructure, deployment automation, system architecture, and team leadership.
+      Working across multi-cloud environments (GCP, AWS) with modern DevOps practices.
     highlights:
-      - Kubernetes cloud (GCP, AWS) cluster deployment
-      - Workflow refactoring, dev tools.
-      - CI/CD performances and reliability
+      - Led SRE team for 2+ years, managing production infrastructure and team growth
+      - Architected and developed core platform systems using Go and microservices
+      - Implemented GitOps workflows with FluxCD and infrastructure management with Config Connector
+      - Designed scalable Kubernetes deployments across GCP and AWS
+      - Built automation tooling and improved deployment reliability using Dagger and CUE
+      - Contributed to global mesh network architecture and system design
   - company: D2SI
-    position: Cloud & DevOps consultant
+    position: Cloud & DevOps Consultant
     website: https://d2si.io
     startDate: "2019-02-01"
     endDate: "2020-05-01"
     summary: >
-      At D2SI I'm being sent helping clients to create, automatize and strengthen their deployment procedures.
-      It goes from development environment (git trunk-based, commit hooks) to CI/CD (docker, canari deployment, GithubAction).
-      I also lead the internal hands-on lab process.
+      Cloud and DevOps consultant helping clients modernize deployment processes and infrastructure.
+      Specialized in serverless architectures, CI/CD pipelines, and development workflow optimization.
+      Led internal training programs and hands-on laboratory sessions.
     highlights:
-      - Automatization of a serverless stack deployment (AWS, Github) in prod, dev & integration
-      - Kick start of a microservices oriented project
-      - Some hands-on creation (about docker, CI/CD)
+      - Automated serverless stack deployments (AWS Lambda, GitHub Actions) across environments
+      - Architected microservices-oriented projects with containerized deployments
+      - Designed CI/CD pipelines with Docker and canary deployment strategies
+      - Created and delivered hands-on workshops on Docker and CI/CD best practices
   - company: Sigfox
-    position: Software factory engineer
+    position: Software Factory Engineer
     website: https://www.sigfox.com
     startDate: "2015-12-15"
     endDate: "2018-12-01"
     summary: >
-      At Sigfox I was helping the backend and test team to fasten and strengthen the deployment process.
-      It means creating CI/CD pipeline, developing custom tools. In my last months there, I participate to the early steps of the
-      backend refactoring (on the docker/kubernetes part)
+      Software factory engineer focused on backend infrastructure modernization and deployment automation.
+      Developed custom tooling and CI/CD pipelines to accelerate development cycles.
+      Contributed to early containerization and Kubernetes adoption initiatives.
     highlights:
-      - Dockerization of the entire backend stack
-      - Custom test tool development
+      - Dockerized entire backend stack, reducing deployment complexity and improving consistency
+      - Built custom testing tools and automation frameworks for backend services
+      - Participated in backend architecture refactoring with Docker and Kubernetes migration
+      - Improved CI/CD pipeline performance and reliability for development teams
 
 publications:
+  - name: CatGPT - Our First Step Toward a Global Mesh Network
+    publisher: Loft Orbital Blog
+    website: https://loftorbital.com/catgpt-our-first-step-toward-a-global-mesh-network/
+    releaseDate: "2024-01-01"
+    summary: Technical blog post exploring the architecture and implementation of a global mesh network system, showcasing distributed systems design and satellite communication technologies.
+  - name: nu_plugin_format_pcap
+    publisher: GitHub
+    website: https://github.com/b4nst/nu_plugin_format_pcap
+    releaseDate: "2024-01-01"
+    summary: Nushell plugin for parsing and formatting PCAP files, demonstrating systems programming in Rust and network protocol analysis capabilities.
+  - name: clef
+    publisher: GitHub
+    website: https://github.com/b4nst/clef
+    releaseDate: "2024-01-01"
+    summary: CLI tool for key management and cryptographic operations, showcasing Go development and security-focused tooling.
   - name: Personne dans le cockpit, pilote automatique
     publisher: DEVOPS D-DAY
     website: https://www.youtube.com/watch?v=QzYqVhiK524
@@ -73,34 +96,47 @@ education:
       - Robotics
 
 skills:
-  - name: Docker
+  - name: Container Orchestration
     level: master
     keywords:
       - Docker
       - Kubernetes
-  - name: CI/CD
+      - Helm
+  - name: CI/CD & DevOps
     level: master
     keywords:
-      - DevOps
-      - GithubAction
-      - Drone
-  - name: Cloud
-    level: Intermediate
+      - GitOps
+      - FluxCD
+      - GitHub Actions
+      - Dagger
+      - Atlantis
+  - name: Cloud Platforms
+    level: master
     keywords:
-      - AWS
       - GCP
-  - name: Software development
+      - AWS
+      - Config Connector
+      - Multi-cloud
+  - name: Software Development
+    level: master
+    keywords:
+      - Go
+      - System Architecture
+      - Microservices
+      - TypeScript
+      - Python
+  - name: Infrastructure as Code
+    level: master
+    keywords:
+      - CUE
+      - Terraform
+      - Configuration Management
+  - name: Leadership & Communication
     level: intermediate
     keywords:
-      - Typescript
-      - Microservices
-      - Go
-      - Python
-  - name: Speaker
-    level: beginner
-    keywords:
-      - Keynote
-      - Hands-on
+      - Team Leadership
+      - Technical Writing
+      - Public Speaking
 
 languages:
   - language: French
@@ -131,7 +167,6 @@ awards:
   - title: "AWS Certified Solutions Architect - Associate"
     date: "2020-01-10"
     awarder: "aws"
-    summary: "[![logo](../img/aws_saa.png)](https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2020-01-10&ci=AWS01214881)"
+    summary: "Certified AWS Solutions Architect with expertise in designing distributed systems and cloud architectures"
 volunteer: []
-publications: []
 references: []

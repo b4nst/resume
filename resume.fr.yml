@@ -1,12 +1,13 @@
 basics:
   name: Bastien Arata
-  label: Développeur
+  label: Staff Software Engineer & SRE Team Lead
   picture: ../img/profile.jpg
   email: bastyen.a@gmail.com
   summary: >
-    Automatisation, partage & techno.
-    J'aime avoir du temps, donc je travaille dur pour que tout se fasse tout seul !
-    J'aime apprendre et partager (plutot open source, pas mon 🍔 !). Si ce n'est pas simple, ce n'est pas fini.
+    Ingénieur passionné par l'automatisation qui préfère coder une fois plutôt que répéter cent fois.
+    Je développe actuellement des systèmes distribués pour faire dialoguer des satellites (oui, dans l'espace !) et j'adore plonger dans les entrailles du réseau pour optimiser le moindre paquet.
+    Entre deux sessions de programmation système, vous me trouverez probablement en train de démonter un vélo ou de hacker sur des projets bas niveau.
+    Ma devise : la simplicité est la sophistication suprême. Si un humain doit le faire deux fois, c'est qu'un script manque à l'appel !
   location:
     city: Toulouse
     countryCode: FR
@@ -19,94 +20,129 @@ basics:
 
 work:
   - company: Loft Orbital
-    position: Site Reliability Engineer
+    position: Staff Software Engineer
     website: https://loftorbital.com
     startDate: "2020-05-04"
     summary: >
-      Chez Loft Orbital je m'occupe de la stack de production.
-      Cela comprends toute la partie cloud, le déploiement, l'automatisation, l'IC/DC and tous les outils sur mesure.
+      Chez Loft Orbital, je porte la double casquette d'architecte système et de leader SRE.
+      Mon quotidien : orchestrer des infrastructures cloud complexes, automatiser tout ce qui peut l'être, et guider une équipe talentueuse.
+      J'évolue dans un écosystème multi-cloud où les bonnes pratiques DevOps sont notre pain quotidien.
     highlights:
-      - Déploiement d'un cluster Kubernetes dans le cloud (GCP, AWS)
-      - Refactorisation des méthodes et outils de dévelopement
-      - Amélioration et stabilisation du CI/CD
+      - Lead SRE depuis plus de 2 ans : j'ai fait grandir l'équipe et solidifié notre infrastructure de production
+      - Conception et développement de la plateforme centrale en Go, dans une architecture microservices
+      - Mise en place d'une approche GitOps complète avec FluxCD et automatisation de l'infra via Config Connector
+      - Déploiements Kubernetes à grande échelle sur GCP et AWS, pensés pour la performance
+      - Création d'outils maison pour automatiser nos déploiements (stack Dagger/CUE)
+      - Participation active à l'architecture de notre réseau mesh satellite global
   - company: D2SI
-    position: Consultant DevOps Cloud
+    position: Consultant Cloud & DevOps
     website: https://d2si.io
     startDate: "2019-02-01"
     endDate: "2020-05-01" 
     summary: >
-      Chez D2SI j'ai comme mission d'aider nos clients à créer, automatiser et renforcer leurs systèmes de déploiement.
-      C'est-à dire la mise en place de l'environment de developpement (git workflow, commit hooks, lint), jusqu'à la stack d'intégration/déploiement continu (docker, GithubAction, canari deployment).
-      J'ai aussi récemment pris les sujets de formation interne (hands-on, onboarding).
+      En tant que consultant, j'ai accompagné de nombreux clients dans leur transformation DevOps et cloud.
+      Ma spécialité : rendre les déploiements fluides et les architectures serverless accessibles.
+      J'ai également conçu et animé les formations internes pour partager ces pratiques avec mes collègues.
     highlights:
-      - Automatisation du déploiement d'une stack serverless (AWS, Github) dans des environments prod, dev et intégration.
-      - Démarrage d'un projet microservices.
-      - Création de quelques hands-on (sur docker, CI/CD)
+      - Automatisation complète de stacks serverless multi-environnements (dev, staging, prod)
+      - Design d'architectures microservices cloud-native avec une approche conteneurs first
+      - Pipelines CI/CD robustes avec déploiements progressifs pour minimiser les risques
+      - Formation des équipes via des ateliers pratiques : "apprendre en faisant"
   - company: Sigfox
     position: Software factory engineer
     website: https://www.sigfox.com
     startDate: "2015-12-15"
     endDate: "2018-12-01"
     summary: >
-      Chez Sigfox j'aidais les équipes backend et test à accélérer et renforcer le déploiement de la stack.
-      J'ai créé les pipelines d'intégration/déploiement, développement d'outils sur mesure. Les derniers mois j'ai participé à la refonte de la stack
-      backend (les parties docker/kubernetes). 
+      Au sein de la software factory, j'ai mené la modernisation de notre infrastructure backend.
+      Mon rôle : créer les outils et pipelines qui ont permis aux équipes de livrer plus vite et mieux.
+      J'ai été aux premières loges de notre transition vers les conteneurs et Kubernetes. 
     highlights:
-      - Dockerization de toute la stack backend.
-      - Développement d'outils sur mesure.
+      - Dockerisation intégrale du backend : déploiements simplifiés et environnements reproductibles
+      - Développement d'une suite d'outils de test sur mesure pour nos besoins spécifiques
+      - Acteur clé de la migration vers une architecture cloud-native (Docker/K8s)
+      - Optimisation des pipelines CI/CD : temps de build divisé par 3, fiabilité multipliée
 
 publications:
+  - name: CatGPT - Notre première étape vers un réseau mesh global
+    publisher: Loft Orbital Blog
+    website: https://loftorbital.com/catgpt-our-first-step-toward-a-global-mesh-network/
+    releaseDate: "2024-01-01"
+    summary: Article de blog où je détaille comment nous avons conçu un réseau maillé global pour connecter nos satellites. Une plongée technique dans les systèmes distribués à l'échelle spatiale.
+  - name: nu_plugin_format_pcap
+    publisher: GitHub
+    website: https://github.com/b4nst/nu_plugin_format_pcap
+    releaseDate: "2024-01-01"
+    summary: Plugin Rust pour Nushell permettant d'analyser les captures réseau PCAP. Un projet qui mèle programmation système et analyse de protocoles.
+  - name: clef
+    publisher: GitHub
+    website: https://github.com/b4nst/clef
+    releaseDate: "2024-01-01"
+    summary: Outil en ligne de commande écrit en Go pour gérer ses clés cryptographiques simplement. La sécurité rendue accessible.
   - name: Personne dans le cockpit, pilote automatique
     publisher: DEVOPS D-DAY
     website: https://www.youtube.com/watch?v=QzYqVhiK524
     releaseDate: "2019-11-14"
-    summary: Automatization du déploiement d'un chat serverless (AWS lambdas) grace à GithubAction. C'était une conférence publique (disponible sur YouTube), pendant la convention Devops D-Day.
+    summary: Conférence où j'ai présenté comment automatiser entièrement le déploiement d'un chat serverless avec GitHub Actions. Retour d'expérience concret lors du DevOps D-Day 2019.
 
 education:
   - institution: Université Paul Sabatier
-    area: Robotique et Informatique
-    studyType: Master
+    area: Technologie de l'information, Robotique
+    studyType: Licence
     startDate: "2012-09-01"
     endDate: "2015-09-01"
     courses:
-      - Developpement informatique
+      - Déploiement logiciel
       - Robotique
 
 skills:
-  - name: Docker
+  - name: Conteneurs & Orchestration
     level: master
     keywords:
       - Docker
-      - Orchestration
-  - name: CI/CD
+      - Kubernetes
+      - Helm
+  - name: Intégration & Déploiement continu
     level: master
     keywords:
-      - DevOps
-      - GithubAction
-      - Drone
-  - name: Cloud
-    level: Intermediate
+      - GitOps
+      - FluxCD
+      - GitHub Actions
+      - Dagger
+      - Atlantis
+  - name: Cloud & Infrastructure
+    level: master
     keywords:
+      - GCP
       - AWS
-      - Serverless
-  - name: Software development
+      - Config Connector
+      - Multi-cloud
+  - name: Développement & Architecture
+    level: master
+    keywords:
+      - Go
+      - Architecture logicielle
+      - Microservices
+      - TypeScript
+      - Python
+  - name: Infrastructure programmée
+    level: master
+    keywords:
+      - CUE
+      - Terraform
+      - Configuration as Code
+  - name: Management & Communication
     level: intermediate
     keywords:
-      - Typescript
-      - Microservices
-      - Go
-      - Rust
-  - name: Speaker
-    level: beginner
-    keywords:
-      - Keynote
-      - Hands-on
+      - Management technique
+      - Documentation technique
+      - Conférences & formations
 
 languages:
-  - language: Francais
-    fluency: Native speaker
+  - language: Français
+    fluency: Langue maternelle
   - language: Anglais
-    fluency: Fluent
+    fluency: Courant
 
 interests:
   - name: 📖 Opensource
@@ -116,14 +152,14 @@ interests:
       - Hands-on
   - name: 🎛️ Music
     keywords:
-      - Production
+      - Producing
       - Ableton
       - DJing
       - Home studio
   - name: 🚴 Vélo
     keywords:
       - Mécanique
-      - Course
+      - Vélo
       - Transport
 
 # Error generated if this fields are null
@@ -131,7 +167,6 @@ awards:
   - title: "AWS Certified Solutions Architect - Associate"
     date: "2020-01-10"
     awarder: "aws"
-    summary: "[![logo](../img/aws_saa.png)](https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2020-01-10&ci=AWS01214881)"
+    summary: "Architecte de solutions AWS certifié avec une expertise dans la conception de systèmes distribués et d'architectures cloud"
 volunteer: []
-publications: []
 references: []

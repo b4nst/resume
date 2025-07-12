@@ -4,13 +4,19 @@
   "description": "My resume",
   "main": "index.js",
   "dependencies": {
-    "jsonresume-theme-elegant": "^1.13.1",
     "npm-run-all": "^4.1.5",
-    "resume-cli": "^1.2.7",
+    "resume-cli": "^1.2.8",
     "yamljs": "^0.3.0"
   },
-  "devDependencies": {},
-  "scripts": {},
+  "devDependencies": {
+    "serve": "^14.2.4"
+  },
+  "scripts": {
+    "build": "make clean && make",
+    "dev": "make clean && make && bun run preview",
+    "clean": "make clean",
+    "preview": "bunx serve dist"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/b4nst/resume.git"

@@ -12,11 +12,12 @@ dist/index.html: dist/.f
 	cp index.html dist
 
 dist/%/resume.json: resume.%.yml dist/%/.f
-	npx yaml2json $< > $@
+	bunx yaml2json $< > $@
 dist/%/index.html : dist/%/resume.json
-	cd $(dir $@) && npx resume export $(notdir $@) --theme elegant
+	node -e "const theme = require('./theme'); const resume = JSON.parse(require('fs').readFileSync('$<', 'utf8')); require('fs').writeFileSync('$@', theme.render(resume));"
 	sed -i.bak s/lang=\"en\"/lang=\"$*\"/g $@
 	rm $@.bak
+	rm $(dir $@)resume.json $(dir $@).f
 
 %/.f:
 	mkdir -p $(dir $@)
