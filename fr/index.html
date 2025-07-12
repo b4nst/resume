@@ -1,0 +1,716 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bastien Arata - Staff Software Engineer & SRE Team Lead</title>
+    <style>/* Dark Holographic Resume Theme */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --bg-primary: #0a0a0f;
+    --bg-secondary: #111118;
+    --bg-tertiary: #1a1a2e;
+    --text-primary: #e0e0e0;
+    --text-secondary: #a0a0a0;
+    --text-dim: #707070;
+    --accent-cyan: #00ffff;
+    --accent-magenta: #ff00ff;
+    --accent-blue: #0099ff;
+    --accent-green: #00ff99;
+    --accent-orange: #ff9900;
+    --border-glow: rgba(0, 255, 255, 0.3);
+    --shadow-glow: rgba(0, 255, 255, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    font-size: 14px;
+    overflow-x: auto;
+}
+
+/* Holographic background effect */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 20% 20%, rgba(0, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 0, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(0, 153, 255, 0.05) 0%, transparent 50%);
+    z-index: -1;
+    animation: holographic-pulse 4s ease-in-out infinite alternate;
+}
+
+@keyframes holographic-pulse {
+    0% { opacity: 0.3; }
+    100% { opacity: 0.7; }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+/* Header Styles */
+.header {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-glow);
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px var(--shadow-glow);
+    position: relative;
+    overflow: hidden;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent-cyan), transparent);
+    animation: scan-line 3s linear infinite;
+}
+
+@keyframes scan-line {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+.header-content {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 30px;
+    align-items: start;
+}
+
+.profile-section {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid var(--accent-cyan);
+    box-shadow: 0 0 15px var(--accent-cyan);
+    object-fit: cover;
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, var(--accent-cyan), var(--accent-magenta));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 5px;
+    text-shadow: 0 0 10px var(--accent-cyan);
+}
+
+.label {
+    font-size: 1.2rem;
+    color: var(--accent-blue);
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.summary {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    max-width: 600px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.9rem;
+}
+
+.contact-item {
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-item a {
+    color: var(--accent-cyan);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: var(--accent-magenta);
+    text-shadow: 0 0 5px var(--accent-magenta);
+}
+
+/* Section Styles */
+.section {
+    background: var(--bg-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.section:hover {
+    border-color: var(--border-glow);
+    box-shadow: 0 0 15px var(--shadow-glow);
+}
+
+.section-title {
+    background: var(--bg-tertiary);
+    padding: 15px 25px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--accent-cyan);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid var(--border-glow);
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent-cyan), var(--accent-magenta));
+}
+
+.section-content {
+    padding: 25px;
+}
+
+/* Experience Styles */
+.experience-item {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.job-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--accent-green);
+    margin-bottom: 5px;
+}
+
+.company-info {
+    text-align: right;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.company {
+    font-weight: 500;
+    color: var(--accent-blue);
+}
+
+.date {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    font-style: italic;
+}
+
+.job-summary {
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.highlights {
+    list-style: none;
+    padding-left: 0;
+}
+
+.highlights li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.highlights li::before {
+    content: '▶';
+    position: absolute;
+    left: 0;
+    color: var(--accent-cyan);
+    font-size: 0.8rem;
+}
+
+/* Skills Styles */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.skill-item {
+    background: var(--bg-tertiary);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.skill-name {
+    color: var(--accent-orange);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.skill-level {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.skill-level-master {
+    background: linear-gradient(45deg, var(--accent-cyan), var(--accent-blue));
+    color: var(--bg-primary);
+}
+
+.skill-level-intermediate {
+    background: linear-gradient(45deg, var(--accent-green), var(--accent-blue));
+    color: var(--bg-primary);
+}
+
+.skill-level-beginner {
+    background: linear-gradient(45deg, var(--accent-orange), var(--accent-magenta));
+    color: var(--bg-primary);
+}
+
+.skill-keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.keyword {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Publications Styles */
+.publication-item {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.publication-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.publication-title a {
+    color: var(--accent-cyan);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.publication-title a:hover {
+    color: var(--accent-magenta);
+    text-shadow: 0 0 5px var(--accent-magenta);
+}
+
+.publication-meta {
+    display: flex;
+    gap: 15px;
+    margin: 5px 0 10px 0;
+    font-size: 0.9rem;
+    color: var(--text-dim);
+}
+
+.publisher {
+    color: var(--accent-blue);
+}
+
+.publication-summary {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Education & Awards */
+.education-item, .award-item {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.education-item:last-child, .award-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.degree, .award-title {
+    color: var(--accent-green);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.institution, .awarder {
+    color: var(--accent-blue);
+    font-weight: 500;
+}
+
+.award-summary {
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .header-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .name {
+        font-size: 2rem;
+    }
+    
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .company-info {
+        text-align: left;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .publication-meta {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+    
+    .header, .section {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+    
+    .name {
+        color: black;
+        text-shadow: none;
+    }
+    
+    .section-title {
+        color: black;
+    }
+}</style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <div class="profile-section">
+                    <img src="../img/profile.jpg" alt="Bastien Arata" class="profile-image">
+                    <div class="profile-info">
+                        <h1 class="name">Bastien Arata</h1>
+                        <h2 class="label">Staff Software Engineer & SRE Team Lead</h2>
+                        <p class="summary">Ingénieur passionné par l'automatisation qui préfère coder une fois plutôt que répéter cent fois. Je développe actuellement des systèmes distribués pour faire dialoguer des satellites (oui, dans l'espace !) et j'adore plonger dans les entrailles du réseau pour optimiser le moindre paquet. Entre deux sessions de programmation système, vous me trouverez probablement en train de démonter un vélo ou de hacker sur des projets bas niveau. Ma devise : la simplicité est la sophistication suprême. Si un humain doit le faire deux fois, c'est qu'un script manque à l'appel !
+</p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">📧 bastyen.a@gmail.com</div>
+                    <div class="contact-item">📍 Toulouse, Occitanie</div>
+                    <div class="contact-item">🔗 <a href="https://github.com/b4nst" target="_blank">Github</a></div><div class="contact-item">🔗 <a href="https://twitter.com/bastienarata" target="_blank">Twitter</a></div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            
+            <section class="section">
+                <h3 class="section-title">Work Experience</h3>
+                <div class="section-content">
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h4 class="job-title">Staff Software Engineer</h4>
+                            <div class="company-info">
+                                <span class="company">Loft Orbital</span>
+                                <span class="date">2020-05-04 - Present</span>
+                            </div>
+                        </div>
+                        <p class="job-summary">Chez Loft Orbital, je porte la double casquette d'architecte système et de leader SRE. Mon quotidien : orchestrer des infrastructures cloud complexes, automatiser tout ce qui peut l'être, et guider une équipe talentueuse. J'évolue dans un écosystème multi-cloud où les bonnes pratiques DevOps sont notre pain quotidien.
+</p>
+                        
+                        <ul class="highlights">
+                            <li>[object Object]</li><li>Conception et développement de la plateforme centrale en Go, dans une architecture microservices</li><li>Mise en place d'une approche GitOps complète avec FluxCD et automatisation de l'infra via Config Connector</li><li>Déploiements Kubernetes à grande échelle sur GCP et AWS, pensés pour la performance</li><li>Création d'outils maison pour automatiser nos déploiements (stack Dagger/CUE)</li><li>Participation active à l'architecture de notre réseau mesh satellite global</li>
+                        </ul>
+                        
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h4 class="job-title">Consultant Cloud & DevOps</h4>
+                            <div class="company-info">
+                                <span class="company">D2SI</span>
+                                <span class="date">2019-02-01 - 2020-05-01</span>
+                            </div>
+                        </div>
+                        <p class="job-summary">En tant que consultant, j'ai accompagné de nombreux clients dans leur transformation DevOps et cloud. Ma spécialité : rendre les déploiements fluides et les architectures serverless accessibles. J'ai également conçu et animé les formations internes pour partager ces pratiques avec mes collègues.
+</p>
+                        
+                        <ul class="highlights">
+                            <li>Automatisation complète de stacks serverless multi-environnements (dev, staging, prod)</li><li>Design d'architectures microservices cloud-native avec une approche conteneurs first</li><li>Pipelines CI/CD robustes avec déploiements progressifs pour minimiser les risques</li><li>[object Object]</li>
+                        </ul>
+                        
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h4 class="job-title">Software factory engineer</h4>
+                            <div class="company-info">
+                                <span class="company">Sigfox</span>
+                                <span class="date">2015-12-15 - 2018-12-01</span>
+                            </div>
+                        </div>
+                        <p class="job-summary">Au sein de la software factory, j'ai mené la modernisation de notre infrastructure backend. Mon rôle : créer les outils et pipelines qui ont permis aux équipes de livrer plus vite et mieux. J'ai été aux premières loges de notre transition vers les conteneurs et Kubernetes.
+</p>
+                        
+                        <ul class="highlights">
+                            <li>[object Object]</li><li>Développement d'une suite d'outils de test sur mesure pour nos besoins spécifiques</li><li>Acteur clé de la migration vers une architecture cloud-native (Docker/K8s)</li><li>[object Object]</li>
+                        </ul>
+                        
+                    </div>
+                    
+                </div>
+            </section>
+            
+
+            
+            <section class="section">
+                <h3 class="section-title">Skills</h3>
+                <div class="section-content">
+                    <div class="skills-grid">
+                        
+                        <div class="skill-item">
+                            <h4 class="skill-name">Conteneurs & Orchestration</h4>
+                            <div class="skill-level skill-level-master">master</div>
+                            <div class="skill-keywords">
+                                <span class="keyword">Docker</span><span class="keyword">Kubernetes</span><span class="keyword">Helm</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <h4 class="skill-name">Intégration & Déploiement continu</h4>
+                            <div class="skill-level skill-level-master">master</div>
+                            <div class="skill-keywords">
+                                <span class="keyword">GitOps</span><span class="keyword">FluxCD</span><span class="keyword">GitHub Actions</span><span class="keyword">Dagger</span><span class="keyword">Atlantis</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <h4 class="skill-name">Cloud & Infrastructure</h4>
+                            <div class="skill-level skill-level-master">master</div>
+                            <div class="skill-keywords">
+                                <span class="keyword">GCP</span><span class="keyword">AWS</span><span class="keyword">Config Connector</span><span class="keyword">Multi-cloud</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <h4 class="skill-name">Développement & Architecture</h4>
+                            <div class="skill-level skill-level-master">master</div>
+                            <div class="skill-keywords">
+                                <span class="keyword">Go</span><span class="keyword">Architecture logicielle</span><span class="keyword">Microservices</span><span class="keyword">TypeScript</span><span class="keyword">Python</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <h4 class="skill-name">Infrastructure programmée</h4>
+                            <div class="skill-level skill-level-master">master</div>
+                            <div class="skill-keywords">
+                                <span class="keyword">CUE</span><span class="keyword">Terraform</span><span class="keyword">Configuration as Code</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <h4 class="skill-name">Management & Communication</h4>
+                            <div class="skill-level skill-level-intermediate">intermediate</div>
+                            <div class="skill-keywords">
+                                <span class="keyword">Management technique</span><span class="keyword">Documentation technique</span><span class="keyword">Conférences & formations</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            
+
+            
+            <section class="section">
+                <h3 class="section-title">Publications & Projects</h3>
+                <div class="section-content">
+                    
+                    <div class="publication-item">
+                        <h4 class="publication-title">
+                            <a href="https://loftorbital.com/catgpt-our-first-step-toward-a-global-mesh-network/" target="_blank">CatGPT - Notre première étape vers un réseau mesh global</a>
+                        </h4>
+                        <div class="publication-meta">
+                            <span class="publisher">Loft Orbital Blog</span>
+                            <span class="date">2024-01-01</span>
+                        </div>
+                        <p class="publication-summary">Article de blog où je détaille comment nous avons conçu un réseau maillé global pour connecter nos satellites. Une plongée technique dans les systèmes distribués à l'échelle spatiale.</p>
+                    </div>
+                    
+                    <div class="publication-item">
+                        <h4 class="publication-title">
+                            <a href="https://github.com/b4nst/nu_plugin_format_pcap" target="_blank">nu_plugin_format_pcap</a>
+                        </h4>
+                        <div class="publication-meta">
+                            <span class="publisher">GitHub</span>
+                            <span class="date">2024-01-01</span>
+                        </div>
+                        <p class="publication-summary">Plugin Rust pour Nushell permettant d'analyser les captures réseau PCAP. Un projet qui mèle programmation système et analyse de protocoles.</p>
+                    </div>
+                    
+                    <div class="publication-item">
+                        <h4 class="publication-title">
+                            <a href="https://github.com/b4nst/clef" target="_blank">clef</a>
+                        </h4>
+                        <div class="publication-meta">
+                            <span class="publisher">GitHub</span>
+                            <span class="date">2024-01-01</span>
+                        </div>
+                        <p class="publication-summary">Outil en ligne de commande écrit en Go pour gérer ses clés cryptographiques simplement. La sécurité rendue accessible.</p>
+                    </div>
+                    
+                    <div class="publication-item">
+                        <h4 class="publication-title">
+                            <a href="https://www.youtube.com/watch?v=QzYqVhiK524" target="_blank">Personne dans le cockpit, pilote automatique</a>
+                        </h4>
+                        <div class="publication-meta">
+                            <span class="publisher">DEVOPS D-DAY</span>
+                            <span class="date">2019-11-14</span>
+                        </div>
+                        <p class="publication-summary">Conférence où j'ai présenté comment automatiser entièrement le déploiement d'un chat serverless avec GitHub Actions. Retour d'expérience concret lors du DevOps D-Day 2019.</p>
+                    </div>
+                    
+                </div>
+            </section>
+            
+
+            
+            <section class="section">
+                <h3 class="section-title">Education</h3>
+                <div class="section-content">
+                    
+                    <div class="education-item">
+                        <h4 class="degree">Licence in Technologie de l'information, Robotique</h4>
+                        <div class="institution">Université Paul Sabatier</div>
+                        <div class="date">2012-09-01 - 2015-09-01</div>
+                    </div>
+                    
+                </div>
+            </section>
+            
+
+            
+            <section class="section">
+                <h3 class="section-title">Certifications</h3>
+                <div class="section-content">
+                    
+                    <div class="award-item">
+                        <h4 class="award-title">AWS Certified Solutions Architect - Associate</h4>
+                        <div class="award-meta">
+                            <span class="awarder">aws</span>
+                            <span class="date">2020-01-10</span>
+                        </div>
+                        <div class="award-summary">Architecte de solutions AWS certifié avec une expertise dans la conception de systèmes distribués et d'architectures cloud</div>
+                    </div>
+                    
+                </div>
+            </section>
+            
+        </main>
+    </div>
+</body>
+</html>
+    
