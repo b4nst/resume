@@ -14,33 +14,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Convert Markdown to PDF - English
+      - name: Convert Markdown to PDF
         uses: BaileyJM02/markdown-to-pdf@v1
         with:
-          input_path: resume.en.md
-          output_dir: ./pdfs
-          images_dir: ./
-          image_import: ./
+          input_path: src
+          output_dir: pdfs
           build_html: false
-
-      - name: Convert Markdown to PDF - French  
-        uses: BaileyJM02/markdown-to-pdf@v1
-        with:
-          input_path: resume.fr.md
-          output_dir: ./pdfs
-          images_dir: ./
-          image_import: ./
-          build_html: false
-
-
-      - name: List generated files
-        run: |
-          echo "Files in current directory:"
-          ls -la
-          echo "Files in pdfs directory:"
-          ls -la ./pdfs/ || echo "pdfs directory not found"
-          echo "All PDF files:"
-          find . -name "*.pdf" -type f
+          build_pdf: true
 
       - name: Get current date
         id: date
@@ -53,13 +33,9 @@ jobs:
           name: Resume Release ${{ steps.date.outputs.date }}
           body: |
             Resume updated on ${{ steps.date.outputs.date }}
-            
-            This release contains:
-            - English resume (Markdown and PDF)
-            - French resume (Markdown and PDF)
           files: |
-            resume.en.md
-            resume.fr.md
+            src/resume.en.md
+            src/resume.fr.md
             pdfs/resume.en.pdf
             pdfs/resume.fr.pdf
         env:
