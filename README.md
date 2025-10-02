@@ -1,5 +1,14 @@
 # Resume
 
-This is my resume, [automagically](https://github.com/b4nst/resume/actions?query=workflow%3Adeploy) builded and available at [b4nst.github.io/resume](https://b4nst.github.io/resume/).
+My resume in Markdown format, automatically converted to PDF and released via GitHub Actions.
 
-Cheers !
+## Files
+
+- `resume.en.md` - English resume
+- `resume.fr.md` - French resume
+
+## Releases
+
+PDFs are automatically generated and released when changes are pushed to the main branch.
+
+Check the [releases page](https://github.com/b4nst/resume/releases) for the latest versions.
