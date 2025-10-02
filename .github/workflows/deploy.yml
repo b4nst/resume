@@ -33,6 +33,15 @@ jobs:
           build_html: false
 
 
+      - name: List generated files
+        run: |
+          echo "Files in current directory:"
+          ls -la
+          echo "Files in pdfs directory:"
+          ls -la ./pdfs/ || echo "pdfs directory not found"
+          echo "All PDF files:"
+          find . -name "*.pdf" -type f
+
       - name: Get current date
         id: date
         run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
