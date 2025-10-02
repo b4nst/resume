@@ -32,10 +32,6 @@ jobs:
           image_import: ./
           build_html: false
 
-      - name: Rename PDFs
-        run: |
-          mv ./pdfs/resume.en.pdf ./pdfs/resume-en.pdf
-          mv ./pdfs/resume.fr.pdf ./pdfs/resume-fr.pdf
 
       - name: Get current date
         id: date
@@ -55,7 +51,7 @@ jobs:
           files: |
             resume.en.md
             resume.fr.md
-            ./pdfs/resume-en.pdf
-            ./pdfs/resume-fr.pdf
+            ./pdfs/resume.en.pdf
+            ./pdfs/resume.fr.pdf
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
