@@ -35,34 +35,12 @@
           name = "resume";
 
           packages = [
-            pkgs.nodejs_24
             pkgs.bun
-            pkgs.gnumake
-            pkgs.python3
           ];
 
           env = [];
 
-          commands = [
-            {
-              name = "build";
-              command = "make clean && make";
-              category = "build";
-              help = "Build the resume";
-            }
-            {
-              name = "dev";
-              command = "make clean && make && bun run preview";
-              category = "dev";
-              help = "Build and serve the resume locally";
-            }
-            {
-              name = "clean";
-              command = "make clean";
-              category = "chore";
-              help = "Clean build artifacts";
-            }
-          ];
+          commands = [];
         };
     });
 }

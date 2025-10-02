@@ -1,47 +1,61 @@
-name: deploy
+name: Release Resume
 
-on: push
+on:
+  push:
+    branches: [main, master]
 
-permissions: 
+permissions:
   contents: write
 
 jobs:
-  build:
+  release:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
+      - name: Checkout
         uses: actions/checkout@v4
-      - name: setup bun
-        uses: oven-sh/setup-bun@v2
+
+      - name: Convert Markdown to PDF - English
+        uses: BaileyJM02/markdown-to-pdf@v1
         with:
-          bun-version: latest
-      - name: install dependencies
-        run: bun install
-      - name: build
-        run: bun run build
-      - name: upload build artifacts
-        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
-        uses: actions/upload-artifact@v4
+          input_path: resume.en.md
+          output_dir: ./pdfs
+          images_dir: ./
+          image_import: ./
+          build_html: false
+
+      - name: Convert Markdown to PDF - French  
+        uses: BaileyJM02/markdown-to-pdf@v1
         with:
-          name: dist
-          path: dist
-          
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
-    steps:
-      - name: checkout
-        uses: actions/checkout@v4
-      - name: download build artifacts
-        uses: actions/download-artifact@v4
+          input_path: resume.fr.md
+          output_dir: ./pdfs
+          images_dir: ./
+          image_import: ./
+          build_html: false
+
+      - name: Rename PDFs
+        run: |
+          mv ./pdfs/resume.en.pdf ./pdfs/resume-en.pdf
+          mv ./pdfs/resume.fr.pdf ./pdfs/resume-fr.pdf
+
+      - name: Get current date
+        id: date
+        run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
         with:
-          name: dist
-          path: dist
-      - name: deploy
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: gh-pages
-          build_dir: dist
+          tag_name: release-${{ steps.date.outputs.date }}
+          name: Resume Release ${{ steps.date.outputs.date }}
+          body: |
+            Resume updated on ${{ steps.date.outputs.date }}
+            
+            This release contains:
+            - English resume (Markdown and PDF)
+            - French resume (Markdown and PDF)
+          files: |
+            resume.en.md
+            resume.fr.md
+            ./pdfs/resume-en.pdf
+            ./pdfs/resume-fr.pdf
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
